@@ -3,9 +3,10 @@
 // HINT: You will need to add an onClick event pass through your props and update the hard coded Likes
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faComment, faHeart, faPaperPlane} from '@fortawesome/free-regular-svg-icons'
 
 const LikeSection = props => {
+  const {likes, likePhoto} = props
   return (
     <div>
       <div
@@ -13,13 +14,16 @@ const LikeSection = props => {
         key="likes-icons-container"
       >
         <div className="like-section-wrapper">
-          <FontAwesomeIcon icon={faHeart} />
+          <FontAwesomeIcon onClick={likePhoto} icon={faHeart} />
         </div>
         <div className="like-section-wrapper">
           <FontAwesomeIcon icon={faComment} />
         </div>
+        <div className="like-section-wrapper">
+          <FontAwesomeIcon icon={faPaperPlane} />
+        </div>
       </div>
-      <p className="like-number">27 likes</p>
+      <p className="like-number">Liked by <em>you</em> and <em>{likes} others</em></p>
     </div>
   )
 };
