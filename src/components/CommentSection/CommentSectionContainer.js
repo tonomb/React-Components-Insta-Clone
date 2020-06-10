@@ -6,7 +6,9 @@ import "./Comment.css";
 
 const CommentSection = props => {
   // Add state for the comments
-  const {comments} = props
+  
+  const [comments, setComments] = useState(props.comments)
+  
   
   return (
     <div>
@@ -16,7 +18,7 @@ const CommentSection = props => {
          return <Comment key={comment.text} comment={comment}/>
         })
       }
-      <CommentInput />
+      <CommentInput newComment={setComments} comments={comments} />
     </div>
   );
 };
