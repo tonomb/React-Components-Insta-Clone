@@ -4,7 +4,7 @@ import CommentSection from './CommentSectionContainer';
 
 const CommentInput = props => {
 
-  const { newComment, comments } = props
+  const { setNewComment, comments } = props
 
   const [commentValue, setCommentValue] = useState('')
 
@@ -16,7 +16,7 @@ const CommentInput = props => {
   const submitHandler = event => {
     // debugger
     event.preventDefault()
-    newComment([...comments, {text: commentValue, username:'Me'}])
+    setNewComment([...comments, {text: commentValue, username:'Me'}])
   }
 
   return (

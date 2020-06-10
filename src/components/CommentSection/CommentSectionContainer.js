@@ -18,7 +18,7 @@ const CommentSection = props => {
          return <Comment key={comment.text} comment={comment}/>
         })
       }
-      <CommentInput newComment={setComments} comments={comments} />
+      <CommentInput setNewComment={setComments} comments={comments} />
     </div>
   );
 };
