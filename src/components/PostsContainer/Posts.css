@@ -34,8 +34,10 @@
   height: 50px;
   width: 50px;
 }
+
 .post-thumb {
-  height: 80%;
+  width: 35px;
+  height: 35px;
   margin: 5px;
   border-radius: 50%;
 }
@@ -50,7 +52,11 @@
   margin: 10px;
 }
 .like-number {
-  width: 100px;
-  margin: 15px 0px;
-  font-size: 16px;
+  text-align: left;
+  margin: 15px 10px;
+  font-size: 14px;
+}
+
+.like-number em{
+  font-weight: bold;
 }

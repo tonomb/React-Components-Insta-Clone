@@ -1,7 +1,7 @@
 const dummyData = [
     {
         username: "philzcoffee",
-        thumbnailUrl: 'https://icon2.cleanpng.com/20180320/sqe/kisspng-twitch-computer-icons-streaming-media-youtube-live-tv-twitch-icon-5ab19172461392.001176751521586546287.jpg',
+        thumbnailUrl: 'https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/s150x150/67248626_346350186304601_6715901285419188224_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=zvKrSR_IipsAX_msRuu&oh=a9b23c63e3a0876b29ccf7247fd1ba05&oe=5F0A97B8',
         imageUrl: 'https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1876&q=80',
         likes: 400,
         timestamp: "July 17th 2017, 12:42:40 pm",
@@ -42,6 +42,27 @@ const dummyData = [
             {
                 username: "dennis_futbol",
                 text: "It that injustice"
+            }
+        ]
+    },
+    {
+        username: "callenschaub",
+        thumbnailUrl: 'https://support.discord.com/hc/user_images/p3ayzhZ2tMvRbQyMzD31TA.png',
+        imageUrl: 'https://cdn.shopify.com/s/files/1/1863/2463/products/image_db3a086f-abbf-444b-a787-f8b5c9cf5516_345x345@2x.jpg?v=1587918956',
+        likes: 9067,
+        timestamp: "June 9th 2020, 04:26:09 pm",
+        comments: [
+            {
+                username: "callenschaub",
+                text: "Best caption/ artwork title gets a free T-shirt*."
+            },
+            {
+                username: "yaghassi",
+                text: "The cosmos within us"
+            },
+            {
+                username: "en_silva417",
+                text: "'Coming together'"
             }
         ]
     }
